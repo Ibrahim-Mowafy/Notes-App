@@ -49,6 +49,13 @@ export function links() {
   return [...NewNoteLinks(), ...noteListLinks()];
 }
 
+export function meta() {
+  return {
+    title: 'All Notes',
+    description: 'Manage your notes with ease.',
+  };
+}
+
 export function CatchBoundary() {
   const caughtResponse = useCatch();
 
@@ -73,3 +80,5 @@ export function ErrorBoundary({ error }) {
     </main>
   );
 }
+
+
